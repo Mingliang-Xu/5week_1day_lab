@@ -1,0 +1,18 @@
+-- CREATE TABLE orders (
+-- order_id SERIAL NOT NULL PRIMARY KEY,
+-- person_id INT REFERENCES person(person_id),
+-- product_name VARCHAR(75), 
+-- product_price FLOAT,
+-- quantity INT NOT NULL
+-- );
+
+-- INSERT INTO orders (person_id, product_name, product_price, quantity ) VALUES
+-- (1, 'iPhone 15', 1500, 2),
+-- (1, 'iPhone 14', 1300, 3),
+-- (3, 'iPhone 13', 1100, 4),
+-- (3, 'iPhone 12', 900, 5),
+-- (5, 'iPhone 11', 700, 6);
+-- SELECT * FROM orders;
+-- SELECT SUM(quantity)FROM orders;
+-- SELECT SUM(product_price) FROM orders;
+-- SELECT person_id, SUM(product_price) FROM orders GROUP BY person_id;
